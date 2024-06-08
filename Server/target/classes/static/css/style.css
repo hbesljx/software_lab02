@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500');
+
+body{
+    overflow-x: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+}
+#sidebar>ul>li{
+    height: 70px;
+}
+/* 所有内容隐藏 */
+.page{
+    display: none;
+}
+
+#viewport{
+    padding-left: 250px;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+#content{
+    width: 100%;
+    position: relative;
+    margin-right: 0;
+}
+
+/* 侧边栏样式 */
+#sidebar{
+    z-index: 100;
+    position: fixed;
+    left: 250px;
+    width: 250px;
+    height: 100%;
+    overflow-y: auto;
+    margin-left: -250px;
+    background: #37474f;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+
+
+#sidebar header{
+    background-color: #263238;
+    font-size: 20px;
+    line-height: 52px;
+    text-align: center;
+}
+
+#sidebar header a{
+    color: #fff;
+    display: block;
+    text-decoration: none;
+}
+
+#sidebar header a:hover{
+    color: rgb(245, 151, 151);
+}
+
+#sidebar .nav a{
+    background: none;
+    border-bottom: 1px solid #455A64;
+    color: #cfd8dc;
+    padding: 16px 24px;
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #37474f;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+form label a {
+    color: black; 
+    text-decoration: none; 
+}
+form label a:hover {
+    color: black; 
+    text-decoration: none; 
+}
+
+
+button:hover {
+    background-color: #263238;
+}
+
+#sidebar .nav a:hover{
+    background: none;
+    color: #ECEFF1;
+}
+.fas{
+    margin-right: -14px;
+}
+
+.machine-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.machine-info {
+    flex-grow: 1;
+}
+
+.machine-item img {
+    width: 100px;
+    height: 100px;
+    margin-left: 15px;
+}
+
+.button {
+    padding: 6px 12px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.add-machine-form input, .add-machine-form select {
+    margin-bottom: 10px;
+    width: 200px;
+}
+.update-machine-form input, .update-machine-form select {
+    margin-bottom: 10px;
+    width: 200px;
+}
+#update-machine-div{
+    display: none;
+}

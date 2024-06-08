@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljx.mapper.GroupMapper">
+
+    <resultMap id="BaseResultMap" type="com.ljx.pojo.Group">
+            <id property="id" column="id" jdbcType="INTEGER"/>
+            <result property="oname" column="oname" jdbcType="VARCHAR"/>
+            <result property="oid" column="oid" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        id,oname,oid
+    </sql>
+</mapper>

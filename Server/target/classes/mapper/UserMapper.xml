@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ljx.mapper.UserMapper">
+
+    <resultMap id="BaseResultMap" type="com.ljx.pojo.User">
+            <id property="uid" column="uid" jdbcType="INTEGER"/>
+            <result property="username" column="username" jdbcType="VARCHAR"/>
+            <result property="password" column="password" jdbcType="VARCHAR"/>
+            <result property="oid" column="oid" jdbcType="VARCHAR"/>
+            <result property="level" column="level" jdbcType="VARCHAR"/>
+            <result property="status" column="status" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        uid,username,password,
+        oid,level,status
+    </sql>
+</mapper>

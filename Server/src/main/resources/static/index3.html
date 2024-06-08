@@ -1,0 +1,89 @@
+<!--普通用户-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科研设备管理系统</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="viewport">
+        <!-- 侧边栏 -->
+        <div id="sidebar">
+            <header>
+                <a href="#">科研设备管理</a>
+            </header>
+            <ul class="nav">
+                <li>
+                    <a href="#" data-target="information">
+                        设备信息
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="overview">
+                        概览
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="classification">
+                        设备分类
+                    </a>
+                </li>
+              
+            </ul>
+        </div>
+        <!-- 内容区域 -->
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <form>
+                                <label>
+                                    <a href="#">搜索设备：</a>
+                                    <input type="text" placeholder="请输入内容" id="search-input">
+                                    <button type="submit" id="search-button">搜索</button>
+                                </label>
+                            </form>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">普通用户</a>
+                        </li>
+                        
+                        
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div id="information" class="page">
+                    <h1>设备信息内容</h1>
+                    <p>这是设备信息的内容。</p>
+                </div>
+                
+                <div id="overview" class="page">
+                    <h1>概览内容</h1>
+                    <p>这是概览的内容。</p>
+                </div>
+                <div id="classification" class="page">
+                    <h1>设备分类</h1>
+                    <p>这是设备分类的内容。</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      url: jdbc:mysql://localhost:3306/hit_software
+      username: root
+      password: 918918
+      driver-class-name: com.mysql.cj.jdbc.Driver

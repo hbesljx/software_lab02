@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'miaowu', sans-serif;
+    background: linear-gradient(45deg, rgb(80, 150, 250), rgb(189, 207, 253)) fixed;
+    background: url("../picture/img.png");
+}
+
+.contain {
+    position: relative;
+    width: 70rem;
+}
+.regist {
+    width: 30%;
+    margin: 10rem auto;
+    padding: 20px;
+    text-align: center;
+    /*background-color: transparent;*/
+    background-color: #ECEFF1;
+}
+
+.regist h2 {
+    margin-top: 0;
+}
+
+.regist form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 1;
+    text-align: left;
+    margin-right: 10px;
+}
+
+.form-group input {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: left;
+    width: auto;
+    box-sizing: border-box; /* 保证padding不增加宽度 */
+}
+
+.form-group select {
+    flex: 2;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%; /* 让输入框占满剩余空间 */
+    box-sizing: border-box; /* 保证padding不增加宽度 */
+}
+
+.regist input[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.regist input[type="button"]:hover {
+    background-color: #0056b3;
+}

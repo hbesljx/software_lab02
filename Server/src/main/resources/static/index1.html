@@ -1,0 +1,154 @@
+<!--高级管理员-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>科研设备管理</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="viewport">
+        <!-- 侧边栏 -->
+        <div id="sidebar">
+            <header>
+                <a href="#">科研设备管理</a>
+            </header>
+            <ul class="nav">
+                <li>
+                    <a href="#" data-target="information">
+                        设备信息
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="manage">
+                        设备管理
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="overview">
+                        概览
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="classification">
+                        设备分类
+                    </a>
+                </li>
+                <li>
+                    <a href="#" data-target="user-manage">
+                        用户管理
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 内容区域 -->
+        <div id="content">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <form>
+                                <label>
+                                    <a href="#">搜索设备：</a>
+                                    <input type="text" placeholder="请输入内容" id="search-input">
+                                    <button type="submit" id="search-button">搜索</button>
+                                </label>
+                            </form>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-user"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a id="userroot" href="#">高级管理员</a>
+                        </li>
+                        <li>
+                            <a id="username1" href="#">用户名</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="container-fluid">
+                <div id="information" class="page">
+                    <h1>设备信息内容</h1>
+                    <p>这是设备信息的内容。</p>
+                </div>
+                <div id="manage" class="page">
+                    <div id="machine-list-manage" class="machine-list">
+                        <!-- 设备信息将通过JavaScript动态生成并填充到这里 -->
+                    </div>
+                    <div class="add-machine-form">
+                        <h3>添加新设备</h3>
+                        <form id="add-machine">
+                            <input type="text" id="new-mname" placeholder="设备名称" required>
+                            <input type="text" id="new-pagesrc" placeholder="图片链接" required>
+                            <input type="text" id="new-info" placeholder="型号规格" required>
+                            <input type="date" id="new-time" placeholder="购置日期" required>
+                            <select name="department" id="new-oid">
+                                <option value="00" disabled selected hidden>所属单位</option>
+                                <option value="1">物理实验室</option>
+                                <option value="2">化学实验室</option>
+                                <option value="3">计算机实验室</option>
+                                <option value="4">航天研究中心</option>
+                                <option value="5">材料研究中心</option>
+                            </select>
+<!--                            <input type="text" id="new-oid" placeholder="所属单位编号" required>-->
+                            <input type="text" id="new-type" placeholder="设备类别" required>
+                            <select id="new-status">
+                                <option value="1">正常</option>
+                                <option value="0">废置</option>
+                            </select>
+                            <button type="submit">添加设备</button>
+                        </form>
+                    </div>
+                    <div class="update-machine-form" id="update-machine-div">
+                        <h3>修改设备信息</h3>
+                        <form id="update-machine">
+                            <input type="text" id="new-mname1" placeholder="设备名称" required>
+                            <input type="text" id="new-pagesrc1" placeholder="图片链接" required>
+                            <input type="text" id="new-info1" placeholder="型号规格" required>
+                            <input type="date" id="new-time1" placeholder="购置日期" required>
+                            <select name="department" id="new-oid1">
+                                <option value="00" disabled selected hidden>所属单位</option>
+                                <option value="1">物理实验室</option>
+                                <option value="2">化学实验室</option>
+                                <option value="3">计算机实验室</option>
+                                <option value="4">航天研究中心</option>
+                                <option value="5">材料研究中心</option>
+                            </select>
+                            <!--                            <input type="text" id="new-oid" placeholder="所属单位编号" required>-->
+                            <input type="text" id="new-type1" placeholder="设备类别" required>
+                            <select id="new-status1">
+                                <option value="1">正常</option>
+                                <option value="0">废置</option>
+                            </select>
+                            <button type="submit">修改信息</button>
+                        </form>
+                    </div>
+                </div>
+                
+                <div id="overview" class="page">
+                    <h1>概览内容</h1>
+                    <p>这是概览的内容。</p>
+                </div>
+                <div id="classification" class="page">
+                    <h1>设备分类</h1>
+                    <p>这是设备分类的内容。</p>
+                </div>
+                <div id="user-manage" class="page">
+                    <h1>用户管理</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
